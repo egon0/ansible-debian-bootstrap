@@ -6,9 +6,9 @@
 - include: hostname.yml
   when: dbs_set_hostname
 
-- include: user.yml
-
 - include: apt.yml
+
+- include: user.yml
 
 - include: unbound.yml
   when: dbs_use_unbound
